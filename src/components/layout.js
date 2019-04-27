@@ -11,6 +11,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./bootstrap.css";
+// import 'bootstrap/dist/css/bootstrap.css';
+
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -18,14 +20,18 @@ const Layout = ({ children }) => (
       query SiteTitleQuery {
         site {
           siteMetadata {
-            title
+            title,
+            menuLinks {
+              name,
+              link
+            }
           }
         }
       }
     `}
     render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
+      <div>
+        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} siteDescription={data.site.siteMetadata.description} />
         <div
           style={{
             margin: `0 auto`,
@@ -41,7 +47,7 @@ const Layout = ({ children }) => (
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </div>
-      </>
+      </div>
     )}
   />
 )
