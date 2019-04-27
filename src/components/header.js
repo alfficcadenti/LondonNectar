@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import 'popper.js'
-import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import './bootstrap.min.css';
 
 const Header = ({ siteTitle, siteDescription, menuLinks }) => (
   <header id='header'
@@ -28,7 +28,7 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         </Link>
       </h1>
 
-      <nav className={'navbar navbar-expand-lg navbar-dark bg-primary'}>
+      <nav className={'navbar navbar-expand-lg navbar-dark bg-success'}>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
