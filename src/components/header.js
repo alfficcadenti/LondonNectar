@@ -28,14 +28,14 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         </Link>
       </h1>
 
-      <nav className={'navbar navbar-expand-lg navbar-dark bg-success'}>
+      <nav className={'navbar navbar-expand-lg navbar-dark bg-primary'}>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse collapse show" id="navbarNav" aria-expanded='false'>
           <ul style={{ display: 'flex', flex: 1, listStyle: 'none' }} className={'navbar-nav mr-auto'}>
             {menuLinks.map(link =>
-              <li key={link.link} className={'nav-item'}>
+              <li key={link.link} className={'nav-item btn-outline-primary'}>
                 <Link className={'nav-link'} to={link.link}>{link.name}</Link>
               </li>
             )}
