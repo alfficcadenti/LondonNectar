@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import 'popper.js'
-import './bootstrap.css';
+import styles from './bootstrap.css';
 
 const Header = ({ siteTitle, siteDescription, menuLinks }) => (
   <header id='header'
