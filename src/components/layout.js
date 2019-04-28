@@ -39,8 +39,8 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
-          <footer>
+          <main className={'text-center'}>{children}</main>
+          <footer className={'fixed-bottom text-center'}>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>

@@ -32,10 +32,10 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="navbar-collapse collapse show" id="navbarNav" aria-expanded='false'>
+        <div class="navbar-collapse collapse show" id="navbarNav" aria-expanded='true'>
           <ul style={{ display: 'flex', flex: 1, listStyle: 'none' }} className={'navbar-nav mr-auto'}>
             {menuLinks.map(link =>
-              <li key={link.link} className={'nav-item btn-outline-primary'}>
+              <li key={link.link} className={'nav-item'}>
                 <Link className={'nav-link'} to={link.link}>{link.name}</Link>
               </li>
             )}
