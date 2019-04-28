@@ -34,7 +34,7 @@ module.exports = {
         background_color: `#333`,
         theme_color: `#333`,
         display: `minimal-ui`,
-        icon: `public/icons/honey.png`, // This path is relative to the root of the site.
+        icon: `src/images/honey.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./public/icons/honey.png",
+        logo: "./src/images/honey.png",
       },
     }  
   ],

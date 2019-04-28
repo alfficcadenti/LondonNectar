@@ -1,8 +1,11 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Logo from "./Logo"
 import 'popper.js'
 import './bootstrap.css';
+
+
 
 const Header = ({ siteTitle, siteDescription, menuLinks }) => (
   <header id='header'
@@ -17,7 +20,8 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <Logo style={{ display: 'inline-block', verticalAlign: 'sub' }}/>
+      <h1 style={{ margin: 0, display: 'inline-block' }}>
         <Link
           to="/"
           style={{
