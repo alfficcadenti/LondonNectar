@@ -1,6 +1,8 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import Navbar from 'react-bootstrap/Navbar'
+import Nav from 'react-bootstrap/Nav'
 import Logo from "./Logo"
 import 'popper.js'
 import './bootstrap.css';
@@ -32,21 +34,19 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         </Link>
       </h1>
       <h3>{siteDescription}</h3>
-      <nav className={'navbar navbar-expand-lg navbar-dark bg-primary'}>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse show" id="navbarNav" aria-expanded='true'>
-          <ul style={{ display: 'flex', flex: 1, listStyle: 'none' }} className={'navbar-nav mr-auto'}>
+      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">        
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">          
+          <Nav className="mr-auto">
             {menuLinks.map(link =>
               <li key={link.link} className={'nav-item'}>
                 <Link className={'nav-link'} to={link.link}>{link.name}</Link>
               </li>
             )}
-          </ul>
-        </div>
+          </Nav>
+        </Navbar.Collapse>
 
-      </nav>
+      </Navbar>
     </div>
   </header>
 )
