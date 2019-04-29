@@ -9,6 +9,10 @@ module.exports = {
         link:'/'
       },
       {
+        name:'honey',
+        link:'/honey'
+      },
+      {
         name:'contact',
         link:'/contact'
       }

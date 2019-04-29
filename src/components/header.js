@@ -31,7 +31,7 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
           {siteTitle}
         </Link>
       </h1>
-
+      <h3>{siteDescription}</h3>
       <nav className={'navbar navbar-expand-lg navbar-dark bg-primary'}>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
@@ -47,10 +47,6 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         </div>
 
       </nav>
-
-      <h3>
-        {siteDescription}
-      </h3>
     </div>
   </header>
 )
