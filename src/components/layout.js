@@ -5,13 +5,13 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
 
-import Header from "./header"
-import "./bootstrap.min.css"
-
+import Header from "./header";
+import "./bootstrap.min.css";
+import "./style.css";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -20,6 +20,7 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title,
+            description,
             menuLinks {
               name,
               link
@@ -39,8 +40,8 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-          <main>{children}</main>
-          <footer>
+          <main className={'text-center'}>{children}</main>
+          <footer className={'fixed-bottom text-center'}>
             © {new Date().getFullYear()}, Built with
             {` `}
             <a href="https://www.gatsbyjs.org">Gatsby</a>

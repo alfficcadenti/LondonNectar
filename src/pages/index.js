@@ -6,7 +6,12 @@ const IndexPage = () => (
   <Layout>
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}></div>
+    <div style={{ maxWidth: `100%`, marginBottom: `1.45rem` }}>
+      <p>{'Pure means no additives whatsoever (even natural ones).'}</p>
+      <p>{'Raw means no additives or processing: neither heated nor filtered.'}</p>
+      <p>{'Local means produces by bees from local beehives that collect nectar from local plants.'}</p>
+      <p>{'Raw, pure and local honey contains a blend of local pollen, which can strengthen a person’s immune system, and reduce diseases such as seasonal allergies.'}</p>    
+    </div>
     
   </Layout>
 )
