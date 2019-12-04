@@ -13,7 +13,7 @@ export default function HTML(props) {
         />
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        <meta name="google-site-verification" content="hO-JOsWjTp3KnIT1Pc3gmDMHB68a3oPorw6Du1HVEMA" />
+        <meta name="google-site-verification" content="GVrR-UAIV5wbRw8_rjai3n7Wgwm5EwKVWzgtinzMRN0" />        
         {/* <link rel="stylesheet" type="text/css" href="custom.css"> */}
         {props.headComponents}
       </head>
