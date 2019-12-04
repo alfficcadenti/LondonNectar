@@ -34,7 +34,7 @@ const Header = ({ siteTitle, siteDescription, menuLinks }) => (
         </Link>
       </h1>
       <h3>{siteDescription}</h3>
-      <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">        
+      <Navbar collapseOnSelect expand="lg">        
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">          
           <Nav className="mr-auto">

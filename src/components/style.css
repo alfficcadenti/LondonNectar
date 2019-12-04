@@ -2,6 +2,14 @@ body {
   font-size: 120%;
 }
 
+nav.navbar {
+  background-color: #fd0 !important;
+}
+
+li > a.nav-link {
+  color: #000000;
+}
+
 footer {
   opacity: 1;
   background-color: #fff;
