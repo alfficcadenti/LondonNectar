@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 const Honey = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Honey" keywords={[`honey`, `raw honey`, `local honey`, `london`, `london honey`, `beekeeping`, `beekeeper`]} />
     
     <div style={{ maxWidth: `100%`, marginBottom: `1.45rem` }}>
     <h1>{'But What Is Honey?'}</h1>
