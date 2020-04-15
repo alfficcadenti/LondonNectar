@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 export default function HTML(props) {
   return (
@@ -13,15 +14,12 @@ export default function HTML(props) {
         />
         <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-        <meta name="google-site-verification" content="GVrR-UAIV5wbRw8_rjai3n7Wgwm5EwKVWzgtinzMRN0" />        
+        <meta name="google-site-verification" content="GVrR-UAIV5wbRw8_rjai3n7Wgwm5EwKVWzgtinzMRN0" />      
         {/* <link rel="stylesheet" type="text/css" href="custom.css"> */}
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
-        <noscript key="noscript" id="gatsby-noscript">
-          This app works best with JavaScript enabled.
-        </noscript>
         <div
           key={`body`}
           id="___gatsby"

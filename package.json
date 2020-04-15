@@ -1,15 +1,17 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "LondonNectar.com",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "London Nectar, Raw, Pure and Local Honey",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Alfredo Ficcadenti <info@londonnectar.com>",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "gatsby": "^2.3.31",
     "gatsby-image": "^2.0.35",
     "gatsby-link": "^2.2.25",
     "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-google-analytics": "^2.2.2",
+    "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-manifest": "^2.0.25",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.11",
@@ -29,13 +31,21 @@
   },
   "devDependencies": {
     "css-loader": "^2.1.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-react": "^7.19.0",
     "gatsby-plugin-react-next": "^1.0.11",
     "gatsby-plugin-sass": "^2.0.11",
     "gatsby-remark-prismjs": "^3.2.8",
     "prettier": "^1.16.4"
   },
   "keywords": [
-    "gatsby"
+    "honey",
+    "raw honey",
+    "local honey",
+    "london",
+    "london honey",
+    "beekeeping",
+    "beekeeper"
   ],
   "license": "MIT",
   "scripts": {
@@ -43,14 +53,6 @@
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "serve": "gatsby serve"
   }
 }
