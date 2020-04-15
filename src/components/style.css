@@ -10,6 +10,10 @@ li > a.nav-link {
   color: #000000;
 }
 
+li > a.nav-link:hover {
+  color: #535353;
+}
+
 footer {
   opacity: 1;
   background-color: #fff;

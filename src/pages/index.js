@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
+    <SEO title="Home" keywords={[`honey`, `raw honey`, `local honey`, `london`, `london honey`, `beekeeping`, `beekeeper`]} />
     
     <div style={{ maxWidth: `100%`, marginBottom: `1.45rem` }}>
       <p>{'Pure means no additives whatsoever (even natural ones).'}</p>
